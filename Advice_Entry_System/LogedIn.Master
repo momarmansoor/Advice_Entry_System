@@ -1,0 +1,61 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="LogedIn.master.cs" Inherits="Advice_Entry_System.LogedIn" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="default.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+   
+    <div id="header">
+	<div id="logo">
+            <h1>Advice Entry System	</h1>	
+	<%--	<h2><a href="http://www.freecsstemplates.org/">By Free CSS Templates</a></h2>--%>
+	</div>
+	<div id="search">
+	</div>
+</div>
+<div id="menu">
+	<ul>
+		<li><a href="Run_Proc_New.aspx"><b>Transaction Make</b></a></li>
+        <li><a href="Authenticate.aspx"><b>Transaction Authentication</b></a></li>
+		<li><a href="Report_New.aspx"><b>Reports</b></a></li>
+		<li><a href="Advice_Inquiry.aspx"><b>Advice Inquiry</b></a></li>
+		<li><a href="GSL_Inquiry.aspx"><b>GSL Inquiry</b></a></li>
+		<%--<li><a href="#"><b>Contact</b></a></li>--%>
+	    <li></li>
+	</ul>
+                
+</div>
+<div id="page">
+	<div style="clear: both;">
+        <table style="width: 100%;">
+            <tr>
+                <td align="right">
+                     <asp:Button ID="Btn_Logout" runat="server" onclick="Btn_Logout_Click" 
+                        Text="Logout" />
+                </td>
+            </tr>
+            </table>
+                
+
+	 <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+	</div>
+</div>
+<div id="footer">
+	<p id="legal">Copyright &copy; 2014 The Bank Of Khyber. All Rights Reserved | Devloped By I.T Division</a></p>
+<%--	<p id="links"><a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a> | <a href="http://validator.w3.org/check/referer" title="This page validates as XHTML 1.0 Transitional"><abbr title="eXtensible HyperText Markup Language">XHTML</abbr></a> | <a href="http://jigsaw.w3.org/css-validator/check/referer" title="This page validates as CSS"><abbr title="Cascading Style Sheets">CSS</abbr></a></p>--%>
+</div>
+       
+    </div>
+    </form>
+</body>
+</html>
